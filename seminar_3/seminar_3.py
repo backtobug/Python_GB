@@ -1,15 +1,15 @@
-# from random import randint
-#
-# lst = [randint(1, 10) for i in range(10)]
-#
-# def odd_position(a):
-#     count = 0
-#     for i in range(0, len(a)):
-#         if i % 2 == 1:
-#             count += a[i]
-#     print(f'{lst} ==> {count}')
-#
-# odd_position(lst)
+from random import randint
+
+lst = [randint(1, 10) for i in range(10)]
+
+def odd_position(a):
+    count = 0
+    for i in range(0, len(a)):
+        if i % 2 == 1:
+            count += a[i]
+    print(f'{lst} ==> {count}')
+
+odd_position(lst)
 # ===========================================
 
 # from random import randint
@@ -31,19 +31,35 @@
 # multiply_pairs(lst)
 # =============================================
 
-from random import uniform
-
-lst = [round(uniform(1, 2), 2) for i in range(5)]
-
-
-def float_minmax(a):
-    max_min = []
-    for i in range(len(a)):
-        if a[i] % 1 != 0:
-            max_min.append(a[i] % 1)
-    return max(max_min) - min(max_min)
-
-
-print(lst)
-result = float_minmax(lst)
-print(f'разница максимальной и минимальной дробной части = {result:.2f}')
+# from random import uniform
+#
+# lst = [round(uniform(1, 2), 2) for i in range(5)]
+#
+#
+# def float_minmax(a):
+#     max_min = []
+#     for i in range(len(a)):
+#         if a[i] % 1 != 0:
+#             max_min.append(a[i] % 1)
+#     return max(max_min) - min(max_min)
+#
+#
+# print(lst)
+# result = float_minmax(lst)
+# print(f'разница максимальной и минимальной дробной части = {result:.2f}')
+# =======================================================
+#
+# from random import randint
+#
+# random_int = randint(1, 100)
+#
+# def convert_to_binary(num):
+#     st = ''
+#     while num > 0:
+#         st = str(num % 2) + st
+#         num = num // 2
+#
+#     print(f'число {random_int} в бинарном виде {st}')
+#
+# convert_to_binary(random_int)
+# ======================================================

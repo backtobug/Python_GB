@@ -1,12 +1,29 @@
-import math
+# import math
+#
+# pi = math.pi
+# num = input('Введите число d пример: 0.001, 0,01: ')
+# count = 0
+#
+# num = num.replace('0.', '')
+#
+# for i in num:
+#     count += 1
+#
+# print(f'Число {pi:.{count}f}')
+# =====================================================
 
-pi = math.pi
-num = input('Введите число d пример: 0.001, 0,01: ')
-count = 0
+def simple_f(n):
+    i = 2
+    lst = []
+    while i * i <= n:
+        while n % i == 0:
+            lst.append(i)
+            n = n / i
+        i = i + 1
+    if n > 1:
+        lst.append(n)
+    print(lst)
 
-num = num.replace('0.', '')
 
-for i in num:
-    count += 1
+simple_f(100)
 
-print(f'Число {pi:.{count}f}')

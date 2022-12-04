@@ -1,9 +1,8 @@
 import math
 
 pi = math.pi
-num = input('Введите число: 0.001, 0.01 и тд..: ')
-count = num.count('0')
-print(f'Число {pi:.{count}f}')
+num = input('Введите число: 0.001, 0.01 и тд..: ').count('0')
+print(f'Число {pi:.{num}f}')
 # =====================================================
 
 # def simple_f(n):

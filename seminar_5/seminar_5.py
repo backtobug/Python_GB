@@ -1,9 +1,9 @@
-# with open('text.txt', 'r', encoding='utf8')as file:
-#     text = file.readline().lower()
-#
-# while 'абв' in text:
-#     text = text.replace('абв', '')
-# print(text)
+with open('text.txt', 'r', encoding='utf8')as file:
+    text = file.readline().lower()
+
+while 'абв' in text:
+    text = text.replace('абв', '')
+print(text)
 # ==================================================
 # map = [1, 2, 3,
 #        4, 5, 6,

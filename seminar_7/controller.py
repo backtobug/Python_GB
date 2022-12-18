@@ -18,10 +18,10 @@ def input_data_user():
 
 def choice():
     sep = ','
-    print('----------------------------------------')
+    print('-' * 40)
     print('Что будем делать?:\n1 - Добавлять новую запись\n2 - Экспортировать все контакты\n3 - Искать контакт')
     num = input('Введите нужную цифру: ')
-    print('----------------------------------------')
+    print('-' * 40)
     if num == '1':
         add_user(input_data_user(), sep)
     elif num == '2':
@@ -29,11 +29,12 @@ def choice():
         print_user(data)
     else:
         word = input('Кого ищем?: ').strip()
-        print('----------------------------------------')
+        print('-' * 40)
         data = export_user()
         item = search_user(word, data)
         if item != None:
             print(item)
+            print('-' * 40)
         else:
             print('Такой записи пока нет')
 
